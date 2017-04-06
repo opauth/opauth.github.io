@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Opauth – Multi-provider authentication framework for PHP</title>
+
+	<link rel="stylesheet" href="/stylesheets/opauth.css?r=2">
+	<link rel="image_src" href="/images/square.png" />
+	<script src="/javascripts/scale.fix.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta property="og:image" content="https://opauth.org/images/square.png" />
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div style="float: right; margin-top: 5px; right: 0;">
+			<iframe src="http://ghbtns.com/github-btn.html?user=opauth&repo=opauth&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+		</div>
+		<h1><a href="/">Opauth</a></h1>
+		<p>Multi-provider authentication framework for PHP</p>
+	</header>
+	<section>
+		<p class="center">
+			<img src="/images/opauth-diagram.png" alt="Opauth diagram">
+		</p>
+
+		<div class="highlight">
+			<p>Opauth enables PHP applications to do <em>user authentication</em> with ease.</p>
+
+			<p class="buttons">
+			<a href="#demo" class="button primary">Demo</a>
+			<a href="download.php" class="button primary">Download</a>
+			<a href="https://github.com/opauth/opauth/wiki" class="button" target="_blank">Documentations</a>
+			</p>
+		</div>
+
+		<h2>What is Opauth?</h2>
+
+		<p>Inspired by <a href="https://github.com/intridea/omniauth">OmniAuth for Ruby</a>, Opauth provides a standardized method for PHP applications to interface with authentication providers. </p>
+
+		<p>Opauth as a framework provides a set of API that allows developers to <a href="https://github.com/opauth/opauth/wiki/Strategy-Contribution-Guide">create strategies</a> that work in a predictable manner across PHP frameworks and applications.</p>
+
+		<p>Opauth works well with other PHP applications &amp; frameworks. It is currently supported on:
+			<ul>
+				<li><a href="https://github.com/opauth/opauth/tree/master/example">vanilla (plain) PHP applications</a> <small><em>(of course)</em></small></li>
+				<li><a href="https://github.com/uzyn/cakephp-opauth">CakePHP</a> <small><em>(maintained by <a href="https://github.com/uzyn">uzyn</a>)</em></small></li>
+				<li><a href="https://github.com/destinomultimedia/ci_opauth">CodeIgniter</a> <small><em>(maintained by <a href="https://github.com/destinomultimedia">destinomultimedia</a>)</em></small></li>
+				<li><a href="https://github.com/mcatm/Opauth-Plugin-for-Codeigniter">CodeIgniter</a> <small><em>(maintained by <a href="https://github.com/mcatm">mcatm</a>)</em></small></li>
+				<li><a href="https://github.com/andreoav/fuel-opauth">FuelPHP</a> <small><em>(maintained by <a href="https://github.com/andreoav/">andreoav</a>)</em></small></li>
+				<li><a href="https://github.com/FakeHeal/opauth-laravel">Laravel</a> <small><em>(maintained by <a href="https://github.com/FakeHeal/">FakeHeal</a>)</em></small></li>
+				<li><a href="https://github.com/Onasusweb/PrestaShop-Opauth">PrestaShop</a> <small><em>(maintained by <a href="https://github.com/Onasusweb/">Onasusweb</a>)</em></small></li>
+				<li><a href="https://github.com/icehero/silex-opauth">Silex</a> <small><em>(maintained by <a href="https://github.com/icehero/">icehero</a>)</em></small></li>
+				<li><a href="https://github.com/kahwee/yii-opauth">Yii Framework</a> <small><em>(maintained by <a href="https://github.com/kahwee">kahwee</a>)</em></small></li>
+				<li><a href="https://github.com/lorenzoferrarajr/LfjOpauth">Zend Framework 2</a> <small><em>(maintained by <a href="https://github.com/lorenzoferrarajr">lorenzoferrarajr</a>)</em></small></li>
+				<li><a href="https://github.com/michalsvec/nette-opauth">Nette</a> <small><em>(maintained by <a href="https://github.com/michalsvec">michalsvec</a>)</em></small></li>
+			<li>and more to come.</li>
+			</ul>
+		</p>
+		<p>If your PHP framework of choice is not yet listed, you can still use Opauth like you would a normal PHP component (class).</p>
+
+		<p><script async class="speakerdeck-embed" data-id="4fbb28ec15a68f001f012325" data-ratio="1.4143646408839778" src="//speakerdeck.com/assets/embed.js"></script></p>
+
+		<h2><a name="strategies"></a><a name="demo"></a>Available strategies</h2>
+
+		<p>Provider-specific:</p>
+
+		<table>
+			<tr>
+				<th>Strategy</th>
+				<th>Package info</th>
+				<th>Download</th>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/bitbucket.com.png" width="16" height="16"> Bitbucket</td>
+				<td><a href="https://github.com/fancyguy/opauth-bitbucket">fancyguy/opauth-bitbucket</a></td>
+				<td class="center">
+					<a href="https://github.com/fancyguy/opauth-bitbucket/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/disqus.com.png"> Disqus</td>
+				<td><a href="https://github.com/rasa/opauth-disqus">rasa/opauth-disqus</a></td>
+				<td class="center">
+					<a href="https://github.com/rasa/opauth-disqus/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/do.com.png"> Do</td>
+				<td><a href="https://github.com/arbales/opauth-do">pocket7878/opauth-do</a></td>
+				<td class="center">
+					<a href="https://github.com/arbales/opauth-do/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/facebook.com.png"> <strong>Facebook</strong></td>
+				<td><a href="https://github.com/opauth/facebook">opauth/facebook</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/facebook/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/flickr.com.png"> Flickr</td>
+				<td><a href="https://github.com/pocket7878/opauth-flickr">pocket7878/opauth-flickr</a></td>
+				<td class="center">
+					<a href="https://github.com/pocket7878/opauth-flickr/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/foursquare.com.png" width="16" height="16"> Foursquare</td>
+				<td><a href="https://github.com/pocket7878/opauth-foursquare">pocket7878/opauth-foursquare</a></td>
+				<td class="center">
+					<a href="https://github.com/pocket7878/opauth-foursquare/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><a name="github"></a><img src="/images/favicons/github.com.png"> GitHub</td>
+				<td><a href="https://github.com/opauth/github">opauth/github</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/github/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/google.com.png"> <strong>Google</strong></td>
+				<td><a href="https://github.com/opauth/google">opauth/google</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/google/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/instagram.com.png"> Instagram</td>
+				<td><a href="https://github.com/muhdazrain/opauth-instagram">muhdazrain/opauth-instagram</a></td>
+				<td class="center">
+					<a href="https://github.com/muhdazrain/opauth-instagram/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/linkedin.com.png"> LinkedIn</td>
+				<td><a href="https://github.com/opauth/linkedin">opauth/linkedin</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/linkedin/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/live.com.png"> (Windows) Live</td>
+				<td><a href="https://github.com/opauth/live">opauth/live</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/live/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/mixi.co.jp.png"> mixi</td>
+				<td><a href="https://github.com/ritou/opauth-mixi">ritou/opauth-mixi</a></td>
+				<td class="center">
+					<a href="https://github.com/ritou/opauth-mixi/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/openid.net.png"> OpenID</td>
+				<td><a href="https://github.com/opauth/openid">opauth/openid</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/openid/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/paypal.com.png"> PayPal</td>
+				<td><a href="https://github.com/24hours/opauth-paypal">24hours/opauth-paypal</a></td>
+				<td class="center">
+					<a href="https://github.com/24hours/opauth-paypal/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/sinaweibo.com.png"> Sina Weibo (新浪微博)</td>
+				<td><a href="https://github.com/dgrabla/opauth-sinaweibo">dgrabla/opauth-sinaweibo</a></td>
+				<td class="center">
+					<a href="https://github.com/dgrabla/opauth-sinaweibo/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/twitter.com.png"> <strong>Twitter</strong></td>
+				<td><a href="https://github.com/opauth/twitter">opauth/twitter</a></td>
+				<td class="center">
+					<a href="https://github.com/opauth/twitter/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/vk.com.png"> VKontakte</td>
+				<td><a href="https://github.com/dgrabla/opauth-vkontakte">dgrabla/opauth-vkontakte</a></td>
+				<td class="center">
+					<a href="https://github.com/dgrabla/opauth-vkontakte/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/developer.yahoo.co.jp.png" width="16" height="16"> Yahoo! Japan</td>
+				<td><a href="https://github.com/ritou/opauth-yahoojp">ritou/opauth-yahoojp</td>
+				<td class="center">
+					<a href="https://github.com/ritou/opauth-yahoojp/zipball/master">ZIP</a>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="/images/favicons/developers.line.me.png" width="16" height="16">LINE</td>
+				<td><a href="https://github.com/opauth/line">opauth/line</td>
+				<td class="center">
+					<a href="https://github.com/YuzuruS/opauth-line/zipball/master">ZIP</a>
+				</td>
+			</tr>
+
+		</table>
+
+		<p>Generic strategy: <a href="https://github.com/uzyn/opauth-oauth">OAuth</a></p>
+
+		<p>See <a href="https://github.com/opauth/opauth/wiki/List-of-strategies">wiki's list of strategies</a> for an updated list of Opauth strategies or to make requests.  Also, refer to <a href="https://github.com/opauth/opauth/wiki/Strategy-contribution-guide">strategy contribution guide</a> if you would like to contribute a strategy.</p>
+
+
+		<h2>Issues &amp; questions</h2>
+
+		<ul>
+		<li>Discussion group: <a href="https://groups.google.com/group/opauth">Google Groups</a><br>Feel free to post any questions to the discussion group.<br>
+		</li>
+		<li>Issues: <a href="https://github.com/opauth/opauth/issues">Github Issues</a><br>
+		</li>
+		<li>Twitter: <a href="http://twitter.com/uzyn">@uzyn</a> <a href="http://twitter.com/yudsuzuk">@yudsuzuk</a>
+		</li>
+		<li>Email me: <a href="mailto:chua@uzyn.com">chua@uzyn.com</a> <a href="mailto:yudsuzuk@gmail.com">yudsuzuk@gmail.com</a>
+		</li>
+		<li>IRC: <strong>#opauth</strong> on <a href="http://webchat.freenode.net/?channels=opauth&amp;uio=d4">Freenode</a>
+		</li>
+		</ul>
+
+		<p>Used Opauth in your project? Tell us! We'll provide a link to your site.</p>
+
+	</section>
+</div>
+<footer>
+	<p class="left">Copyright © 2012 <a href="http://uzyn.com">U-Zyn Chua</a>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	<p class="right">Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+	<p class="center">Opauth is released under the MIT License.</p>
+</footer>
+<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-31914008-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+<a href="https://github.com/opauth/opauth"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+</body>
+</html>
